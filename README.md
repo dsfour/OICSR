@@ -30,7 +30,5 @@ To test the model, run:
 To contact the author:  
 Jiashi Li, lijiashi@bupt.edu.cn
 
-| - | - |
-
 
 
