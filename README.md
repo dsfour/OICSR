@@ -1,4 +1,4 @@
-# OICSR Compressed Models
+# OICSR Pruned Models
 This repo contains some of the pruned models from paper [**OICSR: Out-In-Channel Sparsity Regularization for Compact Deep Neural Networks (CVPR 2019)**](https://arxiv.org/abs/1905.11664).
 ## Reference
 If you find the models useful, please kindly cite our paper:  
