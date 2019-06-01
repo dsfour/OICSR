@@ -1,2 +1,3 @@
+checkpoints/*.pth.tar
 *.pyc
 
