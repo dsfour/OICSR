@@ -19,7 +19,7 @@ We provide ResNet-50 model with various pruned FLOPs pruned percents. The channe
 |resnet50|76.32|0.00|93.00|0.00|4089|
 |resnet50-37.3%FLOPs|76.53|-0.21|93.16|-0.16|2563|
 |resnet50-44.4%FLOPs|76.30|0.02|92.92|0.08|2274|
-|resnet50-50.0%FLOPs|75.95|0.37|92.66|0.34|2046|  
+|resnet50-50.0%FLOPs|75.95|0.37|92.66|0.34|2046|
 
 
 To test the model, run:
