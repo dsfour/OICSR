@@ -18,13 +18,13 @@ model_names = sorted(name for name in models.__dict__
     if name.islower() and not name.startswith("__")
     and callable(models.__dict__[name]))
 parser = argparse.ArgumentParser(description='PyTorch Slimming CIFAR training')
-parser.add_argument('--data', type=str, default='/home/ljs/data/trainData/ILSVRC2012',
-                    help='path to dataset')
+parser.add_argument('--test_data', type=str, default='/mnt/cephfs_wj/cv/common/datasets/ImageNet/ILSVRC2012_img_val',
+                    help='path to ImageNet dataset')
 parser.add_argument('--arch', '-a', metavar='ARCH', default='resnet50',
                     choices=model_names,
                     help='model architecture: ' +
                         ' | '.join(model_names) +
-                        ' (default: resnet18)')
+                        ' (default: resnet50)')
 parser.add_argument('--fpp', type=float, default=0,
                     help='Flops pruned percent of model')
 parser.add_argument('--test-batch-size', type=int, default=100, metavar='N',
@@ -176,11 +176,11 @@ def cal_model_flops(model):
      flops = sum(flops_list)
      return flops
 
-valdir = os.path.join(args.data, 'validation')
+
 normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                  std=[0.229, 0.224, 0.225])
 test_loader = torch.utils.data.DataLoader(
-    datasets.ImageFolder(valdir, transforms.Compose([
+    datasets.ImageFolder(args.test_data, transforms.Compose([
         transforms.Resize(256),
         transforms.CenterCrop(224),
         transforms.ToTensor(),

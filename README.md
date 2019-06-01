@@ -24,7 +24,7 @@ We provide ResNet-50 model with various pruned FLOPs pruned percents. The channe
 |resnet50-50.0%FLOPs|75.95|0.37|92.66|0.34|2046|  
 
 To test the model, run:  
-`python eval_prune_model.py --fpp 50.0`
+`python eval_prune_model.py --test_data /mnt/cephfs_wj/cv/common/datasets/ImageNet/ILSVRC2012_img_val --fpp 50.0`
 
 ## Contact
 To contact the author:  
