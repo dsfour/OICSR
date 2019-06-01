@@ -14,7 +14,7 @@ If you find the models useful, please kindly cite our paper:
 Download the pretrained models from [here](https://drive.google.com/drive/u/0/folders/10s98eW_25-xEHnpGsC3PsSU7PH5z681B) and put it in ./checkpoints.  
 ## Models  
 ### Pruned ResNet-50  
-We provide ResNet-50 model with various pruned FLOPs pruned percents. The channel pruning results are showed as follows:  
+We provide ResNet-50 model with various FLOPs pruned percents. The channel pruning results are showed as follows:  
 
 |Models|Top1 Acc (%)|Drop Top1 Acc (%)|Top5 Acc (%)|Drop Top5 Acc (%)|FLOPs (M)|  
 |:-:|:-:|:-:|:-:|:-:|:-:|  
