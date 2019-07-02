@@ -1,12 +1,13 @@
 # OICSR Pruned Models
-This repo contains some of the pruned models from paper [**OICSR: Out-In-Channel Sparsity Regularization for Compact Deep Neural Networks (CVPR 2019)**](https://arxiv.org/abs/1905.11664).
+This repo contains some of the pruned models from paper [**OICSR: Out-In-Channel Sparsity Regularization for Compact Deep Neural Networks (CVPR 2019)**](http://openaccess.thecvf.com/content_CVPR_2019/papers/Li_OICSR_Out-In-Channel_Sparsity_Regularization_for_Compact_Deep_Neural_Networks_CVPR_2019_paper.pdf).
 ## Reference
 If you find the models useful, please kindly cite our paper:  
 ```
-@article{li2019oicsr,
+@inproceedings{li2019oicsr,
   title={OICSR: Out-In-Channel Sparsity Regularization for Compact Deep Neural Networks},
   author={Li, Jiashi and Qi, Qi and Wang, Jingyu and Ge, Ce and Li, Yujian and Yue, Zhangzhang and Sun, Haifeng},
-  journal={arXiv preprint arXiv:1905.11664},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={7046--7055},
   year={2019}
 }
 ```
